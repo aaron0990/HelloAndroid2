@@ -1,12 +1,12 @@
-#QuizBot
+# QuizBot
 
 Chatbot que permite recoger datos de encuestas definidas mediante un compilador a través de Telegram y consultar gráficas simples e informes sobre los datos recogidos.
 
-##Pasos para ejecutar QuizBot
+## Pasos para ejecutar QuizBot
 
 A continuación se detallan los pasos a seguir para poder ejecutar correctamente QuizBot.
 
-###Instalación
+### Instalación
 
 Abrimos un terminal en la carpeta */QuizBot* y ejecutamos el siguiente comando
 
@@ -14,7 +14,7 @@ Abrimos un terminal en la carpeta */QuizBot* y ejecutamos el siguiente comando
 
 Una vez instaladas las dependencias, podemos empezar a ejecutar el proyecto.
 
-###Definición de la encuesta
+### Definición de la encuesta
 
 Primeramente, debemos de crear la encuesta. Esta se crea en el fichero *Mi_Encuesta* dentro de la carpeta *QuizBot/cl*.  Inicialmente, hay una encuesta de ejemplo ya creada.
 
@@ -41,22 +41,23 @@ A continuación, debemos irnos al directorio donde se encuentra el código del b
 y lo dejamos corriendo. Ahora, podremos interactuar con nuestro bot a través de Telegram y hacer la encuesta que hay de ejemplo en esta práctica.
 
 
-###Modificación de la encuesta
+### Modificación de la encuesta
 
 Si se quiere modificar la encuesta, se han de seguir los siguientes pasos.
 
-####1 - Eliminar el fichero binario XXX_graph  de */QuizBot/bot*
-####2 - Eliminar el fichero user_data (en caso de que exista) de */QuizBot/bot*
-####3 - Modificar el fichero Mi_Encuesta.txt de */QuizBot/cl*
+#### 1 - Eliminar el fichero binario XXX_graph  de */QuizBot/bot*
+#### 2 - Eliminar el fichero user_data (en caso de que exista) de */QuizBot/bot*
+#### 3 - Modificar el fichero Mi_Encuesta.txt de */QuizBot/cl*
+
 Se modifica la encuesta en este fichero. 
 Los identificadores de **pregunta**, **respuesta**, **item**, **alternativa** y **encuesta**, pueden ser cualquier cadena de caracteres alfanuméricos [a-zA-Z0-9] única entre todos los identificadores. No obstante, **los identificadores que listan las posibles respuestas a una pregunta solo pueden ser caracteres numéricos**.
 
-####4  - Volver a generar el fichero binario con la nueva encuesta
+#### 4  - Volver a generar el fichero binario con la nueva encuesta
 Esto se hace en el directorio *QuizBot/cl* ejecutando el comando
 
 	$> python test.py Mi_Encuesta.txt
 
-#Autor
+# Autor
 
 Aarón Acosta Fernandez
 aaron.acosta@est.fib.upc.edu
